@@ -30,3 +30,9 @@ bookAuthors (Book id title authors) = authors
 nicerID      (Book id _     _      ) = id
 nicerTitle   (Book _  title _      ) = title
 nicerAuthors (Book _  _     authors) = authors
+
+data Customer = Customer {
+     customerID      :: CustomerID
+   , customerName    :: String
+   , customerAddress :: Address
+   } deriving (Show)
