@@ -14,7 +14,7 @@ type Fetcher interface {
 }
 
 func Fetch(domain string) Fetcher {
-	return new(fetcher)
+	return &fetcher{}
 }
 
 type fetcher struct {
